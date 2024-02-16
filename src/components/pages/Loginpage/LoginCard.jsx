@@ -2,7 +2,7 @@
 'use client';
 
 import { Button, Card, Checkbox, Label, TextInput } from 'flowbite-react';
-
+import { Link } from 'react-router-dom';
 export default function LoginCard() {
     return (
         <Card className="max-w-sm bg-white bg-opacity-10 p-4 rounded-lg shadow-md" style={{ width: '420px' }}>
@@ -21,7 +21,10 @@ export default function LoginCard() {
                     <Label className='text-white' htmlFor="remember">Remember me</Label>
                 </div>
                 <Button  className='font-bold' type="submit ">Login</Button>
+               
+                <Link to="/Register" className="block mt-4 text-center text-white underline">New User? Sign Up</Link >                          
             </form>
+            
         </Card>
     );
 }
